@@ -1,1 +1,8 @@
 # Conexiones-Empresariales_Nu-ezGarciaJuanLuis
+Fundamentos de Seguridad y Auditoría
+El Syslog es como si fueran las notificaciones del móvil, pero de todo lo que pasa dentro de Linux. Guardar estos avisos en un servidor de fuera es fundamental por tres razones:
+Que no borren sus huellas: Si un hacker entra en el ordenador, lo primero que hará es borrar los logs de esa máquina para que no lo pillen. Si los logs están fuera no puede tocarlos.
+Saber qué ha pasado: Si el servidor se rompe o lo destruyen, los logs de dentro mueren con él. Si los tenemos fuera, podemos investigar exactamente por dónde han entrado y qué han robado para que no vuelva a pasar.
+Control total: Esto impide que el propio administrador o el sistema cambien sus propios registros, así sabemos siempre quién hace qué en la empresa.También es una negligencia grave dejar que cualquiera lea archivos como /var/log/auth.log, porque ahí se pueden ver nombres de usuario y errores de escritura que un atacante usaría para saber en qué cuenta es más fácil entrar. Además, estos registros nos ayudan a distinguir si alguien ataca por SSH donde vemos su dirección IP o si es alguien físicamente delante de la pantalla donde veríamos que usa una TTY.
+Referencias
+[1] Bluehosting, "Cómo solucionar el mensaje de error: La clave del equipo remoto ha cambiado al iniciar sesión vía SSH," Base de conocimientos de Bluehosting. [En línea]. Disponible en: https://docs.bluehosting.cl/troubleshooting/servidores/como-solucionar-el-mensaje-de-error-la-clave-del-equipo-remoto-ha-cambiado-al-iniciar-sesion-via-ssh.html. [Accedido: 17-abr-2026]. [2] Wikipedia, "Syslog," Wikipedia, la enciclopedia libre. [En línea]. Disponible en: https://es.wikipedia.org/wiki/Syslog. [Accedido: 17-abr-2026].
